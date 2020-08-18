@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { AddCategory } from './components/AddCategory';
 import { GifGrip } from './components/GifGrip';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({defaultCategoria=[]}) => {
 
-    const [categorias, setCategorias] = useState(['One Punch']);
+    const [categorias, setCategorias] = useState(defaultCategoria);
 
     return (
         <>
@@ -27,4 +28,8 @@ export const GifExpertApp = () => {
             </ol>
         </>
     );
+}
+
+GifExpertApp.propTypes = {
+    defaultCategoria: PropTypes.array
 }

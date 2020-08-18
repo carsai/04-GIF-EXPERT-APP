@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
 import { GifGripItem } from './GifGripItem';
+import PropTypes from 'prop-types';
 
 export const GifGrip = ({category}) => {
 
@@ -20,4 +21,8 @@ export const GifGrip = ({category}) => {
             </div>
         </>
     )
+}
+
+GifGrip.propTypes = {
+    category: PropTypes.string.isRequired
 }

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con el componente <GifGripItem /> Debe mostrar el componente GifGripItem correctamente  1`] = `
+<div
+  className="card animate__animated animate__bounce"
+>
+  <img
+    alt="Titulazooo"
+    src="https://media0.giphy.com/media/xjb8iUCuPBKGqbuw4D/giphy.gif?cid=59b9c425y7lgnw8oq5bxgq8i0uo5gda2cow1k871q1h4al39&rid=giphy.gif"
+  />
+  <p>
+    Titulazooo
+  </p>
+</div>
+`;
